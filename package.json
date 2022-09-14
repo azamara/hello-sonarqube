@@ -1,0 +1,8 @@
+{
+  "name": "hello-sonarqube",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/azamara/hello-sonarqube",
+  "author": "William Kim <azamara@me.com>",
+  "license": "MIT"
+}
