@@ -2,5 +2,5 @@ projectKey=hello-sonarqube-go-api
 serverUrl=http://localhost:9000
 serverVersion=9.4.0.54424
 dashboardUrl=http://localhost:9000/dashboard?id=hello-sonarqube-go-api
-ceTaskId=AYM83k_ZTofjJgUTdCEJ
-ceTaskUrl=http://localhost:9000/api/ce/task?id=AYM83k_ZTofjJgUTdCEJ
+ceTaskId=AYM85g-6TofjJgUTdCEM
+ceTaskUrl=http://localhost:9000/api/ce/task?id=AYM85g-6TofjJgUTdCEM
