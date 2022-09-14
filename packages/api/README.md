@@ -2,6 +2,7 @@
   <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="200" alt="Nest Logo" /></a>
 </p>
 
+
 [circleci-image]: https://img.shields.io/circleci/build/github/nestjs/nest/master?token=abc123def456
 [circleci-url]: https://circleci.com/gh/nestjs/nest
 
@@ -21,6 +22,38 @@
 </p>
   <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
   [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
+
+
+### @hello-sonarqube/api
+
+![](http://localhost:9000/api/project_badges/measure?project=hello-sonarqube-api&metric=alert_status&token=52240c435aa2df05437d9f878258987baff064a2)
+![](http://localhost:9000/api/project_badges/measure?project=hello-sonarqube-api&metric=sqale_rating&token=52240c435aa2df05437d9f878258987baff064a2)
+![](http://localhost:9000/api/project_badges/measure?project=hello-sonarqube-api&metric=reliability_rating&token=52240c435aa2df05437d9f878258987baff064a2)
+![](http://localhost:9000/api/project_badges/measure?project=hello-sonarqube-api&metric=coverage&token=52240c435aa2df05437d9f878258987baff064a2)
+![](http://localhost:9000/api/project_badges/measure?project=hello-sonarqube-api&metric=code_smells&token=52240c435aa2df05437d9f878258987baff064a2)
+![](http://localhost:9000/api/project_badges/measure?project=hello-sonarqube-api&metric=sqale_index&token=52240c435aa2df05437d9f878258987baff064a2)
+
+![](http://localhost:9000/api/project_badges/quality_gate?project=hello-sonarqube-api&token=52240c435aa2df05437d9f878258987baff064a2)
+
+```sh
+yarn test:coverage
+sonar-scanner \
+  -Dsonar.projectKey=hello-sonarqube-api \
+  -Dsonar.javascript.lcov.reportPaths="coverage/lcov.info" \
+  -Dsonar.sources=. \
+  -Dsonar.tests=. \
+  -Dsonar.test.inclusions="**/*.spec.ts,**/*.test.ts" \
+  -Dsonar.exclusions="node_modules/**/*,test/**/*,src/main.ts" \
+  -Dsonar.host.url=http://localhost:9000 \
+  -Dsonar.login=da108e95984d3e179168bd2fc540b44ffcd7fd9b
+```
+sonar-scanner \
+-Dsonar.projectKey=hello-sonarqube-go-api \
+-Dsonar.go.coverage.reportPaths="coverage.out" \
+
+-Dsonar.host.url=http://localhost:9000 \
+-Dsonar.login=da108e95984d3e179168bd2fc540b44ffcd7fd9b
+
 
 ## Description
 
